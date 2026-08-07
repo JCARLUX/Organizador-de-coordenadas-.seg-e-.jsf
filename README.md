@@ -1,14 +1,20 @@
 # Organizador de coordenadas .seg e .jsf
 
-## 📄 Resumo
+## Sumário
+* [Resumo](#resumo)
+* [Objetivo](#objetivo)
+* [Tecnologias](#tecnologias)
+* [Funcionalidades](#funcionalidades)
+* [Como Executar](#como-executar)
+    * [1. Pré-requisitos](#1-pré-requisitos)
+    * [2. Instalação das Dependências](#2-instalação-das-dependências)
+
+---
+
+## Resumo
 Pipeline em Python para a extração de coordenadas e organização espacial automática de arquivos geofísicos (`.seg`, `.jsf`), incluindo a geração de rotas em formato KML. O script transforma dados brutos e desorganizados em uma estrutura de diretórios baseada a partir da localização geográfica da coleta.
 
-## 💻 Demonstração
-> **Nota:** Adicione aqui uma captura de tela do terminal rodando o script ou um GIF mostrando a pasta de saída sendo populada com os arquivos e os `.kml`.
-> 
-> *Exemplo visual: `![Demonstração do Script](link_da_imagem_ou_gif)`*
-
-## 🎯 Objetivo
+## Objetivo
 Pesquisadores e profissionais lidam frequentemente com grandes volumes de dados marinhos e geofísicos gerados por sonares e equipamentos de navegação. Muitas vezes, esses arquivos perdem sua organização espacial de origem. Este projeto resolve o problema mapeando as coordenadas internas dos arquivos e realocando-os automaticamente em pastas correspondentes ao Estado brasileiro ou região costeira mais próxima, otimizando o fluxo de trabalho em centros de pesquisa.
 
 ## Tecnologias
@@ -31,4 +37,4 @@ Certifique-se de ter o **Python 3.8+** instalado em sua máquina. O gerenciament
 Para que o script consiga ler os arquivos binários e processar os dados geoespaciais, instale as bibliotecas necessárias abrindo o seu terminal e executando:
 
 ```bash
-pip install geopandas shapely segyio
+pip install -r requirements.txt
